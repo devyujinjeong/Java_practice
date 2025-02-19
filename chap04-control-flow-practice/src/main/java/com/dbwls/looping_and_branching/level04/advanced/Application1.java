@@ -36,18 +36,15 @@ public class Application1 {
         int n = sc.nextInt();
         String answer = "";
 
-        for(int i=0; i<s.length(); i++){
-            // 공백이 아닌 경우에만 검사하기
-            char temp = s.charAt(i);
-            if(temp!=' '){
-                int aCode = temp+(n%27);
-                if((aCode>'Z'&&aCode<'a')||aCode>'z'){
-                    answer += (char)(aCode-26);
-                }else{
-                    answer += (char)aCode;
-                }
-            }else{
-                answer += " ";
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            
+            if (ch >= 'A' && ch <= 'Z') { // 대문자인 경우
+                answer += (char) ((ch - 'A' + n) % 26 + 'A');
+            } else if (ch >= 'a' && ch <= 'z') { // 소문자인 경우
+                answer += (char) ((ch - 'a' + n) % 26 + 'a');
+            } else { // 공백인 경우  
+                answer += ch;
             }
         }
 
