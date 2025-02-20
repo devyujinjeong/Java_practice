@@ -43,7 +43,7 @@ public class Application1 {
                 answer += (char) ((ch - 'A' + n) % 26 + 'A');
             } else if (ch >= 'a' && ch <= 'z') { // 소문자인 경우
                 answer += (char) ((ch - 'a' + n) % 26 + 'a');
-            } else { // 공백인 경우  
+            } else { // 공백인 경우
                 answer += ch;
             }
         }
