@@ -39,5 +39,5 @@
 | 7 | api | api |
 | 8 | exception | 예외 처리 |
 | 9 | io | io |
-| 10 | ... | ... |
+| 10 | generic | generic |
 | 11 | ... | ... |
