@@ -34,7 +34,7 @@
 | 2 | [method-and-api](https://github.com/devyujinjeong/Java_practice/tree/main/chap03-method-and-api-practice-quiestion/src/main/java/com/greedy) | 메소드, api |
 | 3 | [control-flow](https://github.com/devyujinjeong/Java_practice/tree/main/chap04-control-flow-practice) | 제어문 |
 | 4 | [array](https://github.com/devyujinjeong/Java_practice/tree/main/chap05-array-practice) | 배열 |
-| 5 | class-and-object | 클래스, 객체 |
+| 5 | [class-and-object](https://github.com/devyujinjeong/Java_practice/tree/main/chap06-class-and-object-practice/src/main/java/com/dbwls) | 클래스, 객체 |
 | 6 | [polymorphism](https://github.com/devyujinjeong/Java_practice/tree/main/chap08-polymorphism-practice) | 다형성 |
 | 7 | [api](https://github.com/devyujinjeong/Java_practice/tree/main/chap09-api-practice) | api |
 | 8 | [exception](https://github.com/devyujinjeong/Java_practice/tree/main/chap10-exception-practice) | 예외 처리 |
