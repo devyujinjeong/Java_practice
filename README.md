@@ -30,14 +30,13 @@
 ## 📂 **실습 목록**
 | 번호 | 제목 | 설명 |
 |------|------|------|
-| 1 | literal-and-variable | 변수 |
-| 2 | [method-and-api](https://github.com/devyujinjeong/Java_practice/tree/main/chap03-method-and-api-practice-quiestion/src/main/java/com/greedy) | 메소드, api |
-| 3 | [control-flow](https://github.com/devyujinjeong/Java_practice/tree/main/chap04-control-flow-practice) | 제어문 |
-| 4 | [array](https://github.com/devyujinjeong/Java_practice/tree/main/chap05-array-practice) | 배열 |
-| 5 | [class-and-object](https://github.com/devyujinjeong/Java_practice/tree/main/chap06-class-and-object-practice/src/main/java/com/dbwls) | 클래스, 객체 |
-| 6 | [polymorphism](https://github.com/devyujinjeong/Java_practice/tree/main/chap08-polymorphism-practice) | 다형성 |
-| 7 | [api](https://github.com/devyujinjeong/Java_practice/tree/main/chap09-api-practice) | api |
-| 8 | [exception](https://github.com/devyujinjeong/Java_practice/tree/main/chap10-exception-practice) | 예외 처리 |
-| 9 | io | io |
-| 10 | [generic](https://github.com/devyujinjeong/Java_practice/tree/main/chap12-generics-practice) | generic |
-| 11 | [collections](https://github.com/devyujinjeong/Java_practice/tree/main/chap13-collection-practice/src/main/java/com/dbwls/level01/basic) | list,set,map,queue |
+| 1 | [method-and-api](https://github.com/devyujinjeong/Java_practice/tree/main/chap03-method-and-api-practice-quiestion/src/main/java/com/greedy) | 메소드, api |
+| 2 | [control-flow](https://github.com/devyujinjeong/Java_practice/tree/main/chap04-control-flow-practice) | 제어문 |
+| 3 | [array](https://github.com/devyujinjeong/Java_practice/tree/main/chap05-array-practice) | 배열 |
+| 4 | [class-and-object](https://github.com/devyujinjeong/Java_practice/tree/main/chap06-class-and-object-practice/src/main/java/com/dbwls) | 클래스, 객체 |
+| 5 | [polymorphism](https://github.com/devyujinjeong/Java_practice/tree/main/chap08-polymorphism-practice) | 다형성 |
+| 6 | [api](https://github.com/devyujinjeong/Java_practice/tree/main/chap09-api-practice) | api |
+| 7 | [exception](https://github.com/devyujinjeong/Java_practice/tree/main/chap10-exception-practice) | 예외 처리 |
+| 8 | io | io |
+| 9 | [generic](https://github.com/devyujinjeong/Java_practice/tree/main/chap12-generics-practice) | generic |
+| 10 | [collections](https://github.com/devyujinjeong/Java_practice/tree/main/chap13-collection-practice/src/main/java/com/dbwls/level01/basic) | list,set,map,queue |
