@@ -33,11 +33,11 @@ public class AccountRepository {
         accountStorage.saveAccounts(accountList);
     }
 
-    // 계좌 수정하기
-    public void updateAccount(Account updatedaccount) {
+    // 계좌 금액 수정하기
+    public void updateAccount(Account updatedAccount) {
         for (int i = 0; i < accountList.size(); i++) {
-            if(accountList.get(i).getAccountNumber().equals(updatedaccount.getAccountNumber())){
-                accountList.set(i,updatedaccount);
+            if(accountList.get(i).getAccountNumber().equals(updatedAccount.getAccountNumber())) {
+                accountList.get(i).setMoney(updatedAccount.getMoney());
                 accountStorage.saveAccounts(accountList);
                 break;
             }

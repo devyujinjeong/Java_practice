@@ -21,8 +21,12 @@ public class CurrentAccountService {
     }
 
     // 출금하기
-    public void withdraw(String accountNumber, int money) throws NotEnoughtMoneyException {
+    public void withdraw(String accountNumber, String pwd, int money) throws NotEnoughtMoneyException {
         Account account = findAccountByAccountNumber(accountNumber);
+
+        if(!account.getPwd().equals(pwd)){
+            throw new IllegalArgumentException("비밀번호가 틀립니다.");
+        }
 
         if(!checkMaxMoney(money)){
             throw new IllegalArgumentException("한 번에 출금 가능한 최대 금액은 " + MAX_MONEY +"원 입니다.");
@@ -37,13 +41,17 @@ public class CurrentAccountService {
     }
 
     // 계좌이체
-    public void transfer(String fromAccountNumber, String toAccountNumber, int money) throws NotEnoughtMoneyException {
+    public void transfer(String fromAccountNumber, String pwd, String toAccountNumber, int money) throws NotEnoughtMoneyException {
         if (fromAccountNumber.equals(toAccountNumber)) {
             throw new IllegalArgumentException("송금 실패 : 출금 계좌와 입금 계좌는 동일할 수 없습니다.");
         }
 
         Account fromAccount = findAccountByAccountNumber(fromAccountNumber);
         Account toAccount = findAccountByAccountNumber(toAccountNumber);
+
+        if(!fromAccount.getPwd().equals(pwd)){
+            throw new IllegalArgumentException("비밀번호가 틀립니다.");
+        }
 
         if (fromAccount.getMoney() < money) {
             throw new NotEnoughtMoneyException("잔액이 부족합니다.");

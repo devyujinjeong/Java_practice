@@ -117,12 +117,14 @@ public class Application {
     public void withdraw(){
         System.out.print("출금할 계좌 번호를 입력하세요: ");
         String accountNumber = sc.nextLine();
+        System.out.print("비밀번호를 입력하세요 : ");
+        String pwd = sc.nextLine();
         System.out.print("출금할 금액을 입력하세요: ");
         int money = sc.nextInt();
         sc.nextLine();
 
         try {
-            currentAccountService.withdraw(accountNumber, money);
+            currentAccountService.withdraw(accountNumber,pwd ,money);
             System.out.println(money + "원이 출금되었습니다.");
         } catch (NotEnoughtMoneyException e) {
             System.out.println(e.getMessage());
@@ -133,6 +135,8 @@ public class Application {
     public void transfer(){
         System.out.print("송금할 계좌 번호를 입력하세요: ");
         String fromAccountNumber = sc.nextLine();
+        System.out.print("비밀번호를 입력하세요 : ");
+        String pwd = sc.nextLine();
         System.out.print("받을 계좌 번호를 입력하세요: ");
         String toAccountNumber = sc.nextLine();
         System.out.print("송금할 금액을 입력하세요: ");
@@ -140,7 +144,7 @@ public class Application {
         sc.nextLine();
 
         try {
-            currentAccountService.transfer(fromAccountNumber, toAccountNumber, money);
+            currentAccountService.transfer(fromAccountNumber, pwd, toAccountNumber, money);
             System.out.println(money + "원이 송금되었습니다.");
         } catch (NotEnoughtMoneyException e) {
             System.out.println(e.getMessage());
